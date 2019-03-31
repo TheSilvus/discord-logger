@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    logger:
+        build:
+            context: .
+        volumes:
+            - "./logger/:/app/logger/"
+        env_file:
+            - "logger.env"
+
